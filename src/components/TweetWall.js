@@ -4,10 +4,7 @@ import Tweet from './Tweet';
 class TweetWall extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      tweets: []
-    };
+    this.state = { tweets: [] };
   }
 
   componentWillMount(){}
