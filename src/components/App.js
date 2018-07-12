@@ -7,10 +7,11 @@ class App extends React.Component {
 
   constructor() {
     super();
+    this.state = { latestTweets: [] };
+  }
 
-    this.state = {
-      latestTweets: []
-    };
+  componentWillMount(){
+    this.fetchTweets();
   }
 
   // TODO: componentWillMount()
