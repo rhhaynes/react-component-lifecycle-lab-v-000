@@ -23,6 +23,9 @@ class App extends React.Component {
   }
 
   componentWillReceiveProps(nextProps){
+    this.setState({
+      latestTweets: [...nextProps.newTweets, ...this.state.tweets]
+    });
   }
 
   startInterval = () => {
